@@ -61,6 +61,7 @@ body {
 
 .nav-list>li>a {
     display: block;
+    text-decoration: none;
     color: var(--primary-text-color);
     font-weight: bold;
     text-align: center;
@@ -71,6 +72,7 @@ body {
 }
 
 .nav-list>li>input {
+    
     display: block;
     text-align: center;
     padding: auto;
