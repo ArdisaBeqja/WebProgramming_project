@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #14181c;
+    --secondary-color: rgba(175, 12, 12, 0.629);
+    --tertiary-color: #c8d1dc51;
+
+    --dividing-color: #c8d1dc76;
+
+    --primary-text-color: #EDEDED;
+    --secondary-text-color: rgba(255, 255, 255, 0.837);
+    --tertiary-text-color: #c8d1dcbf;
+
+    --primary-border-color: rgba(255, 255, 255, 0.341);
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    margin: 0 auto;
+    min-height: calc(100vh - (6rem + 4rem));
+}
+
+.test {
+    box-shadow: -25px 59px 116px 87px rgba(0, 0, 0, 1);
+    margin-bottom: 22%;
+}
+
+.header {
+    background: url(./projectimgs/british_steel.jpg) center/cover no-repeat;
+    height: 80vh;
+    margin-bottom: 2rem;
+    box-shadow: 4px -29px 77px 71px rgba(0, 0, 0, 1) inset;
+    position: relative;
+}
+
+
+/* -----------------START OF NAV------------------------------ */
+.nav-container {
+    opacity: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding-right: 5px;
+}
+
+.nav-list>li {
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list>li>a {
+    display: block;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.nav-list>li>input {
+    display: block;
+    text-align: center;
+    padding: auto;
+    border-radius: 25px;
+    height: 25px;
+    text-align: left;
+    text-indent: 5px;
+}
+
+.nav-link-container {
+    color: var(--primary-text-color);
+    position: absolute;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+}
+
+.text {
+    padding-left: 30px;
+    scale: 2;
+}
+
+/* -----------------END OF NAV---------------------------------*/
+
+.header-link {
+    font-size: smaller;
+    color: var(--primary-text-color);
+    writing-mode: vertical-rl;
+}
+
+.header-span {
+    display: flex;
+    justify-content: end;
+    margin-top: 12%;
+    margin-right: 2%;
+    opacity: 0.4;
+}
+
+.header-message-container {
+    margin-top: 6%;
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: center;
+}
+
+.header-message {
+    margin-top: 0%;
+    color: var(--primary-text-color);
+    font-size: 35px;
+}
+
+.header-button-container {
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: center;
+}
+
+.header-button-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+
+
+/* -----------------END OF HEADER------------------------------------------- */
+
+
+
+/*------------------START OF BODY-------------------------------------------*/
+.body-container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.dividing-messages{
+    font-size: small;
+    color: var(--dividing-color);
+}
+
+ hr {
+     background-color: var(--dividing-color);
+     border: 0 none;
+     color: var(--dividing-color);
+     height: 1px;
+ }
+
+
+/*------------START OF LIST OF BEST ALBUMS--------------*/
+
+.best-albums-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 6rem;
+}
+
+
+.best-albums-poster {
+    max-width: 100%;
+    height: 110%;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.341);
+}
+
+/*------------END OF LIST OF BEST ALBUMS---------------*/
+
+
+
+/*-----------START OF LIST OF USES--------------------*/
+
+.list-of-use-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.list-item-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary-color);
+    width: 47.9%;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.i-container {
+    width: 25%;
+}
+
+i {
+    transform: scale(2.5);
+    position: relative;
+    left: 55%;
+    top: 30%;
+    color: teal;
+    width: 30%;
+}
+
+.textbox {
+    margin-top: 10px;
+    width:70%;
+    color: var(--secondary-text-color);
+    font-size: 1.5vw;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+}
+/*-----------END OF LIST OF USES--------------------*/
+
+
+/*-----------START OF FINAL MESSAGE----------------*/
+
+.final-message-container{
+    display:flex;
+    justify-content: center;
+    color: var(--tertiary-text-color);
+    font-size:larger;
+    margin-top: 8%;
+}
+
+.final-message-link{
+    color:var(--primary-text-color);
+}
