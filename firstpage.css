@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #14181c;
+    --secondary-color: rgba(175, 12, 12, 0.629);
+    --tertiary-color: #c8d1dc51;
+
+    --dividing-color: #c8d1dc76;
+
+    --primary-text-color: #EDEDED;
+    --secondary-text-color: rgba(255, 255, 255, 0.837);
+    --tertiary-text-color: #c8d1dcbf;
+
+    --primary-border-color: rgba(255, 255, 255, 0.341);
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    margin: 0 auto;
+    min-height: calc(100vh - (6rem + 4rem));
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* -----------------START OF HEADER------------------------------------------- */
+
+.test {
+    box-shadow: -25px 59px 116px 87px rgba(0, 0, 0, 1);
+    margin-bottom: 22%;
+}
+
+.header {
+    background: url(./projectimgs/british_steel.jpg) center/cover no-repeat;
+    height: 80vh;
+    margin-bottom: 2rem;
+    box-shadow: 4px -29px 77px 71px rgba(0, 0, 0, 1) inset;
+    position: relative;
+}
+
+
+/* -----------------START OF NAV------------------------------ */
+.nav-container {
+    opacity: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding-right: 5px;
+}
+
+.nav-list>li {
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list>li>a {
+    display: block;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.nav-list>li>input {
+    display: block;
+    text-align: center;
+    padding: auto;
+    border-radius: 25px;
+    height: 25px;
+    text-align: left;
+    text-indent: 5px;
+}
+
+.nav-link-container {
+    color: var(--primary-text-color);
+    position: absolute;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+}
+
+.text {
+    padding-left: 30px;
+    scale: 2;
+}
+
+/* -----------------END OF NAV---------------------------------*/
+
+.header-link {
+    font-size: smaller;
+    color: var(--primary-text-color);
+    writing-mode: vertical-rl;
+}
+
+.header-span {
+    display: flex;
+    justify-content: end;
+    margin-top: 12%;
+    margin-right: 2%;
+    opacity: 0.4;
+}
+
+.header-message-container {
+    margin-top: 6%;
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: center;
+}
+
+.header-message {
+    margin-top: 0%;
+    color: var(--primary-text-color);
+    font-size: 35px;
+}
+
+.header-button-container {
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: center;
+}
+
+.header-button-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+
+
+/* -----------------END OF HEADER------------------------------------------- */
